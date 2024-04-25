@@ -1,0 +1,52 @@
+---
+import movies from "../data/top5movies.json";
+---
+
+<table>
+  <caption>Top 5 DC Movies</caption>
+  <thead>
+    <tr>
+      <td>Rank</td>
+      <td>Title</td>
+      <td>Gross</td>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      movies.map((movie) => (
+        <tr>
+          <td>{movie.rank}</td>
+          <td>{movie.title}</td>
+          <td>{movie.gross}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<style>
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  caption {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  thead {
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    font-weight: bold;
+  }
+
+  td {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #eee;
+  }
+</style>

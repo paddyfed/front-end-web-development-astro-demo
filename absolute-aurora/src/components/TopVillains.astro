@@ -1,0 +1,50 @@
+---
+import villains from "../data/top5villains.json";
+---
+
+<table>
+  <caption>Top 5 DC Villains</caption>
+  <thead>
+    <tr>
+      <td>Rank</td>
+      <td>Character</td>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      villains.map((villain) => (
+        <tr>
+          <td>{villain.rank}</td>
+          <td>{villain.character}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+<style>
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  caption {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  thead {
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    font-weight: bold;
+  }
+
+  td {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #eee;
+  }
+</style>

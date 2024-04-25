@@ -1,0 +1,11 @@
+[
+  { "rank": 1, "title": "The Dark Knight", "gross": "$533,345,358" },
+  { "rank": 2, "title": "Wonder Woman", "gross": "$412,563,408" },
+  {
+    "rank": 3,
+    "title": "Batman v Superman: Dawn of Justice",
+    "gross": "$330,360,194"
+  },
+  { "rank": 4, "title": "Suicide Squad", "gross": "$325,100,054" },
+  { "rank": 5, "title": "Man of Steel", "gross": "$291,045,518" }
+]
