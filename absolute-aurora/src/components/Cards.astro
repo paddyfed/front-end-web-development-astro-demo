@@ -1,0 +1,28 @@
+---
+
+---
+
+<article>
+  <slot />
+</article>
+<style>
+  article {
+    display: grid;
+    grid: auto / 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 576px) {
+    article {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 992px) {
+    article {
+      display: grid;
+      grid: auto / 1fr 1fr;
+    }
+  }
+</style>
