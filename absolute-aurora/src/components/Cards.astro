@@ -1,28 +1,27 @@
 ---
-
+const { columns = 4 } = Astro.props;
 ---
 
 <article>
   <slot />
 </article>
-<style>
+<style define:vars={{ columns: columns }}>
   article {
     display: grid;
-    grid: auto / 1fr 1fr 1fr 1fr;
+    grid: auto / repeat(var(--columns), 1fr);
     gap: 0.5rem;
     margin-top: 1rem;
   }
 
   @media screen and (max-width: 576px) {
     article {
-      display: block;
+      grid: auto / 1fr;
     }
   }
 
   @media screen and (min-width: 577px) and (max-width: 992px) {
     article {
-      display: grid;
-      grid: auto / 1fr 1fr;
+      grid: auto / repeat(2, 1fr);
     }
   }
 </style>
