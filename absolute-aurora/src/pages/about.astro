@@ -1,15 +1,18 @@
 ---
+import Cards from "../components/Cards.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About Me">
   <main>
-    <h1>About Me</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sequi
-      nostrum officia amet omnis, doloribus architecto necessitatibus accusamus
-      veniam laborum, voluptatum, libero id quia! Blanditiis ducimus qui
-      nesciunt aut maxime!
-    </p>
+    <Cards columns="2">
+      <h1>About Me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sequi
+        nostrum officia amet omnis, doloribus architecto necessitatibus
+        accusamus veniam laborum, voluptatum, libero id quia! Blanditiis ducimus
+        qui nesciunt aut maxime!
+      </p>
+    </Cards>
   </main>
 </Layout>
