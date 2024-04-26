@@ -1,0 +1,34 @@
+<nav>
+  <ul>
+    <li><a href="https://www.dccomics.com/movies">Movies</a></li>
+    <li><a href="https://www.dccomics.com/characters">Characters</a></li>
+    <li><a href="https://www.dccomics.com/comics">Comics</a></li>
+  </ul>
+</nav>
+<style>
+  nav {
+    background-color: var(--main-bg-color);
+    padding: 0.2rem 0.5rem;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid: auto / repeat(3, 1fr);
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 576px) {
+    ul {
+      grid: auto / 1fr;
+      text-align: left;
+    }
+  }
+</style>
